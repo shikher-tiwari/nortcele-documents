@@ -1,0 +1,26 @@
+amenityBookingID(will generate automatically),
+            amenitiesName(Required),
+            amenityRate(Required),
+            amenitySlots,
+            amenityBookingDate(Required),
+            amenityTimeSchedule,
+            amenityCGST,
+            amenitySGST,
+            amenityDiscount,
+            amenityTotalAmount(Required), 
+            amenityBookingUserID(Required), 
+            amenityBookingUserName(Required) ,
+            amenityBookingUserContact (Required),
+            amenityBookingAmountPaid(Required), 
+            amenityBookingPaidStatus(Required)['PAID', 'PENDING','PART_PAYMENT'] will accept these values ,
+            amenityBookingStatus
+
+ post   /api/amenitiesbooking/savebooking   
+ get 	/api/amenitiesbooking/savebooking (getallbookings)
+ delete /api/amenitiesbooking/:id
+ get  	/api/amenitiesbooking/id (to get booking by id)
+ put  	/api/amenitiesbooking/UpdateBooking/:id
+ 
+ 
+ to get all amenities available
+ get  	/api/amenities/

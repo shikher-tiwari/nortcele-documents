@@ -1,0 +1,712 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bodyText">
+    <p>
+        <img src="data:image/png;base64,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"
+            style="width: 80pt; height: 80pt;" alt="image">
+    </p>
+    <p class="heading">
+        Terms and conditions of use
+    </p>
+    <p>
+        You understand that your use our mobile application, S3 (“App”), is subject to certain terms and conditions
+        (“Terms of Use” or “Terms”).
+    </p>
+    <p>
+        Please read these Terms carefully before signing up on the App.
+    </p>
+    <p>
+        The Terms of Use are subject to the Community Guidelines (available here:
+        <strong><a href="./Community_ Guidelines.html">Community Guidelines</a></strong> and Privacy Policy (available
+        here:
+        <strong><a href="./Privacy_Policy_Agreement_for_S3_App.html">Privacy Policy</a></strong>).
+    </p>
+    <p>
+        These Terms of Use and the Privacy Policy constitute a valid and legally binding agreement between You and Us.
+        The App is being provided to you as a service on a revocable, limited, non-exclusive, and non-transferable
+        license.
+    </p>
+    <p>
+        This document is an electronic record in terms of the Information Technology Act, 2000 (“IT Act”) India, the
+        rules thereunder as applicable, and the provisions pertaining to electronic records in various statutes as
+        amended by the IT Act. This electronic record is generated by a computer system and does not require any
+        physical or digital signatures.
+    </p>
+    <p>
+        We may update these Terms of Use from time to time and will notify You as and when We do so. Please ensure You
+        read our Terms of Use and any updated version when You use the App.
+    </p>
+    <p>
+        Acceptance of Terms and Registration of Account
+    </p>
+    <ol style="list-style-type:lower-alpha;line-height: 150%;">
+        <li>These Terms set forth a legally binding contract between You and Us. By using the Platforms, You agree to be
+            bound by these Terms together with the Privacy Policy.
+        </li>
+        <li>
+            To accept these Terms, You must be at least 18 (eighteen) years of age. In the event that You are below 18
+            (eighteen) years of age or such other older legal age, Your guardian must read and understand and accept the
+            provisions on Your behalf.
+        </li>
+        <li>
+            If You are executing/accepting these terms on behalf of any registered association / society or builder
+            (“Direct Customer”), You confirm that You are a major and are competent, to accept/execute the Terms of Use.
+        </li>
+        <li>
+            You also agree to provide true, accurate and complete information about Yourself and update them upon any
+            change.
+        </li>
+        <li>
+            To avail any services offered by the Company, You will have to register on the Platforms to create Your
+            account. To register You will be required to open an account by completing the registration process, by
+            providing Us with current, complete and accurate information as prompted by the registration form. You may
+            then update the identifiable information relating to You.
+        </li>
+        <li>
+            To access Your account on the Platforms, You will be asked to log in with Your user ID and password, to
+            establish a unique identity for You. You are responsible for maintaining the confidentiality of Your
+            password, verification code, and account information. If there is any compromise on Your password You can
+            change Your password using the ‘Forgot Password?’ functionality.
+        </li>
+        <li>
+            At the time of registration, if You provide any information that is untrue, inaccurate, not current or
+            incomplete, or We have reasonable grounds to suspect that such information is untrue, inaccurate, not
+            current or incomplete, We reserve the right to suspend or terminate Your account and refuse any and all
+            current or future use of the Platforms (or any portion thereof) at any time.
+        </li>
+        <li>
+            You may access the Platforms as available for Your personal use only.
+        </li>
+        <li>
+            You will be required to enter a valid phone number while registering on the Platforms. By registering Your
+            phone number with us, You consent to be contacted by Us via phone calls, SMS notifications, and/or e-mails,
+            in case of any subscription/service updates.
+        </li>
+        <li>
+            You agree that it shall not be the responsibility of the Company to perform background checks or provide any
+            advice relating to the hiring/firing of the security personnel of the apartment complex /gated complex
+            and/or any third-party service providers providing services to the residents of such apartment complex
+            /gated complex. The hiring/firing of such security personnel and/or any third-party service providers shall
+            be at the sole risk of the association of the apartment complex /gated complex or the residents of such
+            apartment complex /gated complex, as the case maybe. We are merely a technology platform.
+        </li>
+    </ol>
+
+
+    <p>
+        Registration of the Direct Customer Account
+    </p>
+    <ol style="list-style-type: lower-alpha;line-height: 150%;">
+        <li>
+            These Terms set forth a legally binding contract between You and Us. By using the Platforms, You agree to be
+            bound by these Terms together with the Privacy Policy.
+        </li>
+        <li>
+            To accept these Terms, You must be at least 18 (eighteen) years of age. In the event that You are below 18
+            (eighteen) years of age or such other older legal age, Your guardian must read and understand and accept the
+            provisions on Your behalf.
+        </li>
+        <li>
+            If You are executing/accepting these terms on behalf of any registered association / society or builder
+            (“Direct Customer”), You confirm that You are a major and are competent, to accept/execute the Terms of Use.
+        </li>
+        <li>
+            You also agree to provide true, accurate and complete information about Yourself and update them upon any
+            change.
+        </li>
+        <li>
+            To avail any services offered by the Company, You will have to register on the Platforms to create Your
+            account. To register You will be required to open an account by completing the registration process, by
+            providing Us with current, complete and accurate information as prompted by the registration form. You may
+            then update the identifiable information relating to You.
+        </li>
+        <li>To avail any services offered by the Company, You will have to register on the Platforms to create Your
+            account. To register You will be required to open an account by completing the registration process, by
+            providing Us with current, complete and accurate information as prompted by the registration form. You may
+            then updTo access Your account on the Platforms, You will be asked to log in with Your user ID and password,
+            to establish a unique identity for You. You are responsible for maintaining the confidentiality of Your
+            password, verification code, and account information. If there is any compromise on Your password You can
+            change Your password using the ‘Forgot Password?’ functionality.ate the identifiable information relating to
+            You.
+        </li>
+        <li>
+            At the time of registration, if You provide any information that is untrue, inaccurate, not current or
+            incomplete, or We have reasonable grounds to suspect that such information is untrue, inaccurate, not
+            current or incomplete, We reserve the right to suspend or terminate Your account and refuse any and all
+            current or future use of the Platforms (or any portion thereof) at any time.
+        </li>
+        <li>
+            You may access the Platforms as available for Your personal use only.
+        </li>
+        <li>
+            You will be required to enter a valid phone number while registering on the Platforms. By registering Your
+            phone number with us, You consent to be contacted by Us via phone calls, SMS notifications, and/or e-mails,
+            in case of any subscription/service updates.
+        </li>
+        <li>
+            You agree that it shall not be the responsibility of the Company to perform background checks or provide any
+            advice relating to the hiring/firing of the security personnel of the apartment complex /gated complex
+            and/or any third-party service providers providing services to the residents of such apartment complex
+            /gated complex. The hiring/firing of such security personnel and/or any third-party service providers shall
+            be at the sole risk of the association of the apartment complex /gated complex or the residents of such
+            apartment complex /gated complex, as the case maybe. We are merely a technology platform.
+        </li>
+    </ol>
+
+    <p>
+        Registration of the Administrative Account
+    </p>
+    <ol style="list-style-type: lower-alpha;line-height: 150%;">
+        <li>
+            If You are registering the administrative account for the Direct Customer online on the Platforms, You may
+            be required to complete a verification process as part of setting up the account (“Account”).
+        </li>
+        <li>
+            To access the Direct Customers administration account, the authorised personnel of the association shall
+            also be provided with a unique ID and password. We categorically state the Company has no liability for
+            usage or sharing of information / data by such Direct Customer. They are fully responsible for all
+            activities that occur on the administration account.
+        </li>
+        <li>
+
+        </li>
+    </ol>
+
+    <p>
+        Services
+    </p>
+    <ol style="list-style-type: lower-alpha;line-height: 150%;">
+        <li>
+            The Company offers You a technology platform which ensures to the best extent possible, the safety and
+            security of apartment complexes/gated enclaves by deploying its proprietary software (“Service”).
+        </li>
+        <li>
+            You acknowledge and agree that the association of each such apartment complex/gated enclave, being our
+            Direct Customers, shall share all Users / residents information with the Company, including Your
+            information, and the same shall also be subject to the terms of our Privacy Policy. It is clarified that
+            such information is in addition to the information provided by You on the Platform.
+        </li>
+        <li>
+            You agree that the Service may enable You to control the access of entry into the apartment complex/gated
+            enclave through inviting or letting non-residents, such as service providers who provide daily services
+            (maids, drivers, cooks, etc.), as well as non-regular visitors including, without limitation, family,
+            friends, and delivery personnel. You agree that every entry to service providers, guests and visitors in the
+            Premises is either resident initiated and is authorised by You or authorised by personnels of appointed
+            Security Agency or any other agency or vendor or individual as appointed by the Association or builder at
+            the Premises and the Company shall have no liability in this regard. Therefore, the Company shall not be
+            liable for any entry in to the apartment complex/gated enclave, as the entry process is completely
+            controlled by You.
+        </li>
+        <li>
+            You agree that the Company offers various others additional services through its Platform, which You may
+            avail at Your own risk. The Company shall not be liable for any services that You chose to avail on/from the
+            Platform. These additional services may be governed by specific policies.
+        </li>
+        <li>
+            The Company does not guarantee the consistency or the stability of the Platforms. Further, any services
+            provided by the Company may be subject to change at the discretion of the Company, and the Company does not
+            require Your permission for the same. While we want to insure the best user experience, We do not represent
+            or warrant that the services or our Platform will be error free or uninterrupted.
+        </li>
+        <li>
+            The Company does not control the information provided by third parties (such as value-added services or
+            other promotional / marketing links on our Platform) nor does the Company control any information or data
+            provided by the other residents registered association or builders, being our Direct Customers, as the case
+            may be. Your reliance on the same shall be at your own risk.
+        </li>
+        <li>
+            Reliance on any information provided by such third parties, their employees, or others appearing on the
+            Platform is solely at your own risk. Furthermore, the information provided by the Company on the Platform is
+            on as “AS IS” basis and any reliance on the same shall be at Your sole risk. You understand the Company is
+            merely a technology platform and that the Company shall not be responsible for the correctness of the
+            information provided by You or any third party on the Company’s Platform. You acknowledge and agree that the
+            Company is an intermediary and the use and/or publication of any information provided by the users shall be
+            at the User’s sole risk except so far as provided under these Terms.
+        </li>
+        <li></li>
+    </ol>
+
+    <p>
+        Termination or Suspension of Account
+    </p>
+    <p>
+        You agree that We may at any time and for any reason, including but not limited to breach of the Terms or the
+        Privacy Policy, terminate or restrict or suspend Your access to the Platform, with or without prior notice, and
+        without liability. If there is a suspicion of untoward or illegal activity, we may suspend Your account
+        immediately.
+    </p>
+
+    <p>
+        Preservation/Disclosure
+    </p>
+    <p>
+        You acknowledge, consent and agree that the Company may treat Your account information along with such other
+        information provided by You as per the&nbsp; <strong><a
+                href="./Privacy_Policy_Agreement_for_S3_App.html">Privacy
+                Policy</a></strong>
+    </p>
+    <p>
+        Security Components
+    </p>
+    <p>
+        You understand that the Platform and software embodied within the Platform may include security components that
+        permit digital materials to be protected, and that use of these materials is subject to usage rules set by the
+        Company, the same shall at all times be subject to the Privacy Policy of the Company. You may not attempt to
+        override, disable, circumvent or otherwise interfere with any such security components and usage rules embedded
+        into the Platform.
+    </p>
+    <p>
+        Links to Third Parties
+    </p>
+    <p>
+        Our Platform may contain links to other applications or websites owned by third parties (i.e. advertisers,
+        affiliate partners, strategic partners, or others). We are not responsible for examining or evaluating, and we
+        do not warrant the products or offerings of, any of these businesses or individuals, or the accuracy of the
+        content of their applications or websites. The Company does not assume any responsibility or liability for the
+        actions, product, and content of any such applications or websites. Before You access or visit any third-party
+        applications or websites made available on Our App, You should review the applicable terms of use and prevailing
+        policies for such applications or websites. If You decide to access any such third-party platform, You do so at
+        Your own risk.
+    </p>
+    <p>
+        Trademark, Copyright and Restriction
+    </p>
+    <ol style="list-style-type: lower-alpha;line-height: 150%;">
+        <li>
+            The Platform is proprietary software developed and made available exclusively by the Company. The Company is
+            the sole owner of the Platform, and all software created to make the Platform available to You. All content
+            on the Platform, which is including, but not limited to, names, logos, trademarks, images, text, columns,
+            graphics, graphs, illustrations, artwork, software, designs, text, graphics, graphs, images, information,
+            button icons, and any other content (“Content”) are the exclusive and sole property of the Company.
+        </li>
+        <li>
+            All icons and logos are trademarks of and proprietary to the Company. The unauthorized copying,
+            modification, use or publication of these marks is strictly prohibited.
+        </li>
+        <li>
+            All Content is the exclusive copyright of the Company or its licensors, except the third-party content and
+            link to third party apps or websites. Systematic retrieval of the Company’s Content to create or compile,
+            directly or indirectly, a collection, compilation, database or directory (whether through robots, spiders,
+            automatic devices or manual processes) without written permission from the Company is prohibited. In
+            addition, use of the Content for any purpose not expressly permitted by the Company in these Terms is
+            prohibited and may invite legal action.
+        </li>
+        <li>
+            The Company respects the intellectual property of others. In case You feel that Your trademark or copyright
+            has been infringed, You can write to us at legal@aws.s3serv.com
+        </li>
+    </ol>
+
+    <p>
+        Prohibited Conduct
+    </p>
+    <p>
+        You agree that You shall not use the Platforms in order to host, display, upload, modify, publish, transmit,
+        update, distribute, share, store or destroy material:
+    </p>
+    <p>
+        in violation of any applicable law or regulation;
+    </p>
+    <p>
+        in a manner that will infringe the copyright, trademark, trade secret or other intellectual property or
+        proprietary rights of others or violate the privacy, publicity or other personal rights of others;
+    </p>
+    <p>
+        that belongs to another person and to which the user does not have any right to;
+    </p>
+    <p>
+        that is grossly harmful, harassing, blasphemous, defamatory, obscene, pornographic, paedophilic, libellous;
+    </p>
+    <p>
+        harm minors in any way;
+    </p>
+    <p>
+        deceives or misleads the addressee about the origin of such message or communicates any information which is
+        grossly offensive or menacing in nature;
+    </p>
+    <p>
+        Terms and Termination
+    </p>
+    <ol style="list-style-type: lower-alpha;line-height: 150%;">
+        <li>
+            These Terms of Use shall remain in full force and effect for so long as You use the Platform. You may delete
+            Your account at any time, for any reason, by following the instructions on the Platform. The Company however
+            does not offer any refunds.
+        </li>
+        <li>
+            The Company reserves the right to terminate the services or the Platform without prior notice. Your account
+            or Your access to the Platform may be terminated immediately, with or without notice to You, and without
+            liability to You, if the Company believes that You have breached any of these Terms, the Privacy Policy, or
+            any false or misleading information, or interfered with use of the Platform by others.
+        </li>
+        <li>
+            The Company reserves the right to cancel delete or deactivate Your Account, if it believes the same has been
+            compromised, or is being used fraudulently, at its own discretion.
+        </li>
+
+    </ol>
+
+    <p>
+        Disclaimer of Warranties and Liability
+    </p>
+    <ol style="list-style-type: lower-alpha;line-height: 150%;">
+        <li>
+            The Company is a technology platform and only provides licenses to its Users to use its proprietary solution
+            to facilitate safety and security in gated communities.
+        </li>
+        <li>
+            All Content on this Platform, (including but not limited to software) and services, included on or otherwise
+            made available to You through this Platform are provided on “AS IS” and “AS AVAILABLE” basis without any
+            representation or warranties, express or implied except otherwise specified in writing.
+        </li>
+        <li>
+            The Company does not warrant that the technology platform, information, content, product (including
+            software) or services included on or otherwise made available to the Users through the technology platform
+            are free of viruses, malware, or other harmful components.
+        </li>
+        <li>
+            The Company shall not be liable for any unanticipated or unscheduled down time of all or a portion of the
+            services provided to the Users.
+        </li>
+        <li>
+            The Company shall not be responsible for actions of information sharing by the Direct Customer. The Direct
+            Customer shall be solely responsible and liable for obtaining the requisite permissions from its residents
+            to share their respective information with the Company.
+        </li>
+        <li>
+            You acknowledge and agree that the Company shall not be held responsible or liable for theft, security
+            breach, or any other unusual or illegal activity that occurs in the premises of the apartment complex /gated
+            complex, as the services of the Company are provided on a best effort basis. The Direct Customer shall
+            contact the respective law enforcement agencies for any such unusual or illegal activity.
+        </li>
+        <li>
+            The Company will not be liable to You in any way or in relation to the Content, or use of, or otherwise in
+            connection with the Platform. The Company does not warrant that the Platform, information, Content, product
+            (including software) or services included on or otherwise made available to You through the Platform are
+            free of viruses or other harmful components.
+        </li>
+        <li>
+            All warranties including without limitation, the implied warranties of merchantability, fitness for a
+            particular purpose, for the title and non-infringement are disclaimed and excluded.
+        </li>
+        <li>
+            All warranties including without limitation, the implied warranties of merchantability, fitness for a
+            particular purpose, for the title and non-infringement are disclaimed and excluded.
+        </li>
+        <li>
+            Our affiliates, respective investors, directors, employees, agents, suppliers, and Us shall not be liable,
+            at any time for any, direct, indirect, punitive, incidental, special, consequential, damages arising out of
+            or in any way connected with the use of the Platforms, whether based in contract, tort, strict liability, or
+            other theory.
+        </li>
+        <li>
+            Nothing on the Platform constitutes, or is meant to constitute, advice of any kind.
+        </li>
+        <li>
+            SUBJECT TO APPLICABLE LAWS, IN NO EVENT WILL THE COMPANY OR ITS EMPLOYEES’, OR ITS AGENTS’, PARTNERS, AND
+            CONTRACTORS’, AGGREGATE LIABILITY ARISING FROM OR RELATED TO THE AFORESAID SERVICES SHALL EXCEED THE
+            PAYMENTS ACTUALLY RECEIVED AND RETAINED BY THE COMPANY FROM YOU, FOR ANY AND ALL CAUSES OF ACTION BROUGHT BY
+            YOU OR YOUR AGENTS.
+        </li>
+    </ol>
+
+    <p>
+        Indemnity
+    </p>
+    <p>
+        You agree to defend, indemnify and hold harmless the Company, and its subcontractors, officers, directors,
+        employees, consultants, representatives and agents, from and against any and all claims, damages, obligations,
+        losses, liabilities, costs or expenses (including but not limited to attorneys’ fees and costs) arising directly
+        from:
+    </p>
+    <p>
+        Your use of and access to the Platform;
+    </p>
+    <p>
+        Your violation of any Terms and the Privacy Policy contained herein;
+    </p>
+    <p>
+        Your violation of any third party right, including without limitation any copyright, property, or privacy right.
+    </p>
+    <p>
+        Provided however the same are not on account of fraud, misrepresentation or negligence of the Company or its
+        employees.
+    </p>
+
+    <p>
+        Additional Terms
+    </p>
+    <p>
+        We reserve the right at any time to modify, edit, delete, suspend or discontinue, temporarily or permanently the
+        service or any of the Platform (or any portion thereof) with or without notice. You agree that we will not be
+        liable to You or to any third party for any such modification, editing, deletion, suspension or discontinuance
+        of the Platform.
+    </p>
+    <p>
+        This Agreement and any rights and licenses granted hereunder, may not be transferred or assigned by You, but may
+        be assigned by the Company without restriction.
+    </p>
+    <p>
+        This Agreement together with the Privacy Policy and any other policies/legal notices published by the Company on
+        the Platform or elsewhere in or around Your apartment complex, shall constitute the entire agreement between You
+        and the Company concerning the Platform, the Company’s services, and governs Your use of the Platform,
+        superseding any prior agreements between You and the Company with respect to the Platform.
+    </p>
+    <p>
+        The failure of the Company to exercise or enforce any right or provision of these Terms shall not constitute a
+        waiver of such right or provision. If any provision of these Terms is found by a court of competent jurisdiction
+        to be invalid, the Parties nevertheless agree that the court should endeavour to give effect to the Parties’
+        intentions as reflected in the provision, and the other provisions of this Agreement remain in full force and
+        effect.
+    </p>
+    <p>
+        These Terms are governed by the laws of India. Any matters arising under these terms shall be subject to the
+        exclusive jurisdiction of courts located in Lucknow.
+    </p>
+    <p>
+        Grievance Officer
+    </p>
+    <p>
+        In case of any grievance arising from the use of the Platforms, please contact the Grievance Officer, the
+        details of which are set forth below-
+    </p>
+    <p>
+        Grievance Officer: Shivam Singh Chauhan
+    </p>
+    <p>
+        Contact: info@s3serv.com
+    </p>
+
+    <p>
+        For the purpose of these Terms of Use, wherever the context so requires “You” or “User” shall mean any natural
+        or legal person or any entity who has agreed to become a registered User on the Platform by providing
+        registration data while registering on the Platform. The term “We”, “Us”, “Our” shall mean Spring Spruce
+        Services Private Limited (“S3” or the “Company”, which expression shall, wherever the context permits, admits or
+        requires, be deemed to mean and include its successors in interest and permitted assigns). The Platforms are
+        owned and operated by the Company.
+    </p>
+
+    <p>
+        Contact
+    </p>
+    <address>
+        Spring Spruce Services Private Limited,<br>
+        GH-08/1, Vrindavan Yojna, Raibareily road, Lucknow.<br>
+        Uttar Pradesh-226029 (India).
+    </address>
+    <p>
+        Call +91 84009-99344
+    </p>
+    <p>
+        info@s3serv.com
+    </p>
+    <p>
+        Download App
+    </p>
+
+    <p>
+        <svg width="150px" height="150px" viewBox="0 -47.5 135 135" id="Layer_1" xmlns="http://www.w3.org/2000/svg">
+
+            <style>
+                .st0 {
+                    fill: #a6a6a6
+                }
+
+                .st1 {
+                    stroke: #ffffff;
+                    stroke-width: .2;
+                    stroke-miterlimit: 10
+                }
+
+                .st1,
+                .st2 {
+                    fill: #fff
+                }
+
+                .st3 {
+                    fill: url(#SVGID_1_)
+                }
+
+                .st4 {
+                    fill: url(#SVGID_2_)
+                }
+
+                .st5 {
+                    fill: url(#SVGID_3_)
+                }
+
+                .st6 {
+                    fill: url(#SVGID_4_)
+                }
+
+                .st7,
+                .st8,
+                .st9 {
+                    opacity: .2;
+                    enable-background: new
+                }
+
+                .st8,
+                .st9 {
+                    opacity: .12
+                }
+
+                .st9 {
+                    opacity: .25;
+                    fill: #fff
+                }
+            </style>
+
+            <path d="M130 40H5c-2.8 0-5-2.2-5-5V5c0-2.8 2.2-5 5-5h125c2.8 0 5 2.2 5 5v30c0 2.8-2.2 5-5 5z" />
+
+            <path class="st0"
+                d="M130 .8c2.3 0 4.2 1.9 4.2 4.2v30c0 2.3-1.9 4.2-4.2 4.2H5C2.7 39.2.8 37.3.8 35V5C.8 2.7 2.7.8 5 .8h125m0-.8H5C2.2 0 0 2.3 0 5v30c0 2.8 2.2 5 5 5h125c2.8 0 5-2.2 5-5V5c0-2.7-2.2-5-5-5z" />
+
+            <path class="st1"
+                d="M47.4 10.2c0 .8-.2 1.5-.7 2-.6.6-1.3.9-2.2.9-.9 0-1.6-.3-2.2-.9-.6-.6-.9-1.3-.9-2.2 0-.9.3-1.6.9-2.2.6-.6 1.3-.9 2.2-.9.4 0 .8.1 1.2.3.4.2.7.4.9.7l-.5.5c-.4-.5-.9-.7-1.6-.7-.6 0-1.2.2-1.6.7-.5.4-.7 1-.7 1.7s.2 1.3.7 1.7c.5.4 1 .7 1.6.7.7 0 1.2-.2 1.7-.7.3-.3.5-.7.5-1.2h-2.2v-.8h2.9v.4zM52 7.7h-2.7v1.9h2.5v.7h-2.5v1.9H52v.8h-3.5V7H52v.7zM55.3 13h-.8V7.7h-1.7V7H57v.7h-1.7V13zM59.9 13V7h.8v6h-.8zM64.1 13h-.8V7.7h-1.7V7h4.1v.7H64V13zM73.6 12.2c-.6.6-1.3.9-2.2.9-.9 0-1.6-.3-2.2-.9-.6-.6-.9-1.3-.9-2.2s.3-1.6.9-2.2c.6-.6 1.3-.9 2.2-.9.9 0 1.6.3 2.2.9.6.6.9 1.3.9 2.2 0 .9-.3 1.6-.9 2.2zm-3.8-.5c.4.4 1 .7 1.6.7.6 0 1.2-.2 1.6-.7.4-.4.7-1 .7-1.7s-.2-1.3-.7-1.7c-.4-.4-1-.7-1.6-.7-.6 0-1.2.2-1.6.7-.4.4-.7 1-.7 1.7s.2 1.3.7 1.7zM75.6 13V7h.9l2.9 4.7V7h.8v6h-.8l-3.1-4.9V13h-.7z" />
+
+            <path class="st2"
+                d="M68.1 21.8c-2.4 0-4.3 1.8-4.3 4.3 0 2.4 1.9 4.3 4.3 4.3s4.3-1.8 4.3-4.3c0-2.6-1.9-4.3-4.3-4.3zm0 6.8c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6c1.3 0 2.4 1 2.4 2.6 0 1.5-1.1 2.6-2.4 2.6zm-9.3-6.8c-2.4 0-4.3 1.8-4.3 4.3 0 2.4 1.9 4.3 4.3 4.3s4.3-1.8 4.3-4.3c0-2.6-1.9-4.3-4.3-4.3zm0 6.8c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6c1.3 0 2.4 1 2.4 2.6 0 1.5-1.1 2.6-2.4 2.6zm-11.1-5.5v1.8H52c-.1 1-.5 1.8-1 2.3-.6.6-1.6 1.3-3.3 1.3-2.7 0-4.7-2.1-4.7-4.8s2.1-4.8 4.7-4.8c1.4 0 2.5.6 3.3 1.3l1.3-1.3c-1.1-1-2.5-1.8-4.5-1.8-3.6 0-6.7 3-6.7 6.6 0 3.6 3.1 6.6 6.7 6.6 2 0 3.4-.6 4.6-1.9 1.2-1.2 1.6-2.9 1.6-4.2 0-.4 0-.8-.1-1.1h-6.2zm45.4 1.4c-.4-1-1.4-2.7-3.6-2.7s-4 1.7-4 4.3c0 2.4 1.8 4.3 4.2 4.3 1.9 0 3.1-1.2 3.5-1.9l-1.4-1c-.5.7-1.1 1.2-2.1 1.2s-1.6-.4-2.1-1.3l5.7-2.4-.2-.5zm-5.8 1.4c0-1.6 1.3-2.5 2.2-2.5.7 0 1.4.4 1.6.9l-3.8 1.6zM82.6 30h1.9V17.5h-1.9V30zm-3-7.3c-.5-.5-1.3-1-2.3-1-2.1 0-4.1 1.9-4.1 4.3s1.9 4.2 4.1 4.2c1 0 1.8-.5 2.2-1h.1v.6c0 1.6-.9 2.5-2.3 2.5-1.1 0-1.9-.8-2.1-1.5l-1.6.7c.5 1.1 1.7 2.5 3.8 2.5 2.2 0 4-1.3 4-4.4V22h-1.8v.7zm-2.2 5.9c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6c1.3 0 2.3 1.1 2.3 2.6s-1 2.6-2.3 2.6zm24.4-11.1h-4.5V30h1.9v-4.7h2.6c2.1 0 4.1-1.5 4.1-3.9s-2-3.9-4.1-3.9zm.1 6h-2.7v-4.3h2.7c1.4 0 2.2 1.2 2.2 2.1-.1 1.1-.9 2.2-2.2 2.2zm11.5-1.8c-1.4 0-2.8.6-3.3 1.9l1.7.7c.4-.7 1-.9 1.7-.9 1 0 1.9.6 2 1.6v.1c-.3-.2-1.1-.5-1.9-.5-1.8 0-3.6 1-3.6 2.8 0 1.7 1.5 2.8 3.1 2.8 1.3 0 1.9-.6 2.4-1.2h.1v1h1.8v-4.8c-.2-2.2-1.9-3.5-4-3.5zm-.2 6.9c-.6 0-1.5-.3-1.5-1.1 0-1 1.1-1.3 2-1.3.8 0 1.2.2 1.7.4-.2 1.2-1.2 2-2.2 2zm10.5-6.6l-2.1 5.4h-.1l-2.2-5.4h-2l3.3 7.6-1.9 4.2h1.9l5.1-11.8h-2zm-16.8 8h1.9V17.5h-1.9V30z" />
+
+            <g>
+
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="21.8" y1="33.29" x2="5.017" y2="16.508"
+                    gradientTransform="matrix(1 0 0 -1 0 42)">
+
+                    <stop offset="0" stop-color="#00a0ff" />
+
+                    <stop offset=".007" stop-color="#00a1ff" />
+
+                    <stop offset=".26" stop-color="#00beff" />
+
+                    <stop offset=".512" stop-color="#00d2ff" />
+
+                    <stop offset=".76" stop-color="#00dfff" />
+
+                    <stop offset="1" stop-color="#00e3ff" />
+
+                </linearGradient>
+
+                <path class="st3" d="M10.4 7.5c-.3.3-.4.8-.4 1.4V31c0 .6.2 1.1.5 1.4l.1.1L23 20.1v-.2L10.4 7.5z" />
+
+                <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="33.834" y1="21.999" x2="9.637"
+                    y2="21.999" gradientTransform="matrix(1 0 0 -1 0 42)">
+
+                    <stop offset="0" stop-color="#ffe000" />
+
+                    <stop offset=".409" stop-color="#ffbd00" />
+
+                    <stop offset=".775" stop-color="orange" />
+
+                    <stop offset="1" stop-color="#ff9c00" />
+
+                </linearGradient>
+
+                <path class="st4" d="M27 24.3l-4.1-4.1V19.9l4.1-4.1.1.1 4.9 2.8c1.4.8 1.4 2.1 0 2.9l-5 2.7z" />
+
+                <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="24.827" y1="19.704" x2="2.069"
+                    y2="-3.054" gradientTransform="matrix(1 0 0 -1 0 42)">
+
+                    <stop offset="0" stop-color="#ff3a44" />
+
+                    <stop offset="1" stop-color="#c31162" />
+
+                </linearGradient>
+
+                <path class="st5" d="M27.1 24.2L22.9 20 10.4 32.5c.5.5 1.2.5 2.1.1l14.6-8.4" />
+
+                <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="7.297" y1="41.824" x2="17.46"
+                    y2="31.661" gradientTransform="matrix(1 0 0 -1 0 42)">
+
+                    <stop offset="0" stop-color="#32a071" />
+
+                    <stop offset=".069" stop-color="#2da771" />
+
+                    <stop offset=".476" stop-color="#15cf74" />
+
+                    <stop offset=".801" stop-color="#06e775" />
+
+                    <stop offset="1" stop-color="#00f076" />
+
+                </linearGradient>
+
+                <path class="st6" d="M27.1 15.8L12.5 7.5c-.9-.5-1.6-.4-2.1.1L22.9 20l4.2-4.2z" />
+
+                <path class="st7" d="M27 24.1l-14.5 8.2c-.8.5-1.5.4-2 0l-.1.1.1.1c.5.4 1.2.5 2 0L27 24.1z" />
+
+                <path class="st8"
+                    d="M10.4 32.3c-.3-.3-.4-.8-.4-1.4v.1c0 .6.2 1.1.5 1.4v-.1h-.1zM32 21.3l-5 2.8.1.1 4.9-2.8c.7-.4 1-.9 1-1.4 0 .5-.4.9-1 1.3z" />
+
+                <path class="st9"
+                    d="M12.5 7.6L32 18.7c.6.4 1 .8 1 1.3 0-.5-.3-1-1-1.4L12.5 7.5c-1.4-.8-2.5-.2-2.5 1.4V9c0-1.5 1.1-2.2 2.5-1.4z" />
+
+            </g>
+
+        </svg>
+
+        <svg width="150px" height="150px" viewBox="0 -189.93 539.856 539.856" xmlns="http://www.w3.org/2000/svg">
+
+            <g transform="scale(4.00216 4.0011)">
+
+                <path fill="#FFF"
+                    d="M134.032 35.268a3.83 3.83 0 0 1-3.834 3.83H4.729a3.835 3.835 0 0 1-3.839-3.83V4.725A3.84 3.84 0 0 1 4.729.89h125.468a3.834 3.834 0 0 1 3.834 3.835l.001 30.543z" />
+
+                <path fill="#A6A6A6"
+                    d="M130.198 39.989H4.729A4.73 4.73 0 0 1 0 35.268V4.726A4.733 4.733 0 0 1 4.729 0h125.468a4.735 4.735 0 0 1 4.729 4.726v30.542c.002 2.604-2.123 4.721-4.728 4.721z" />
+
+                <path
+                    d="M134.032 35.268a3.83 3.83 0 0 1-3.834 3.83H4.729a3.835 3.835 0 0 1-3.839-3.83V4.725A3.84 3.84 0 0 1 4.729.89h125.468a3.834 3.834 0 0 1 3.834 3.835l.001 30.543z" />
+
+                <path fill="#FFF"
+                    d="M30.128 19.784c-.029-3.223 2.639-4.791 2.761-4.864-1.511-2.203-3.853-2.504-4.676-2.528-1.967-.207-3.875 1.177-4.877 1.177-1.022 0-2.565-1.157-4.228-1.123-2.14.033-4.142 1.272-5.24 3.196-2.266 3.923-.576 9.688 1.595 12.859 1.086 1.554 2.355 3.287 4.016 3.226 1.625-.066 2.232-1.035 4.193-1.035 1.943 0 2.513 1.035 4.207.996 1.744-.027 2.842-1.56 3.89-3.127 1.255-1.779 1.759-3.533 1.779-3.623-.04-.014-3.386-1.292-3.42-5.154zM26.928 10.306c.874-1.093 1.472-2.58 1.306-4.089-1.265.056-2.847.875-3.758 1.944-.806.942-1.526 2.486-1.34 3.938 1.421.106 2.88-.717 3.792-1.793z" />
+
+                <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-23.235" y1="97.431" x2="-23.235" y2="61.386"
+                    gradientTransform="matrix(4.0022 0 0 4.0011 191.95 -349.736)">
+
+                    <stop offset="0" stop-color="#1a1a1a" stop-opacity=".1" />
+
+                    <stop offset=".123" stop-color="#212121" stop-opacity=".151" />
+
+                    <stop offset=".308" stop-color="#353535" stop-opacity=".227" />
+
+                    <stop offset=".532" stop-color="#575757" stop-opacity=".318" />
+
+                    <stop offset=".783" stop-color="#858585" stop-opacity=".421" />
+
+                    <stop offset="1" stop-color="#b3b3b3" stop-opacity=".51" />
+
+                </linearGradient>
+
+                <path fill="url(#a)"
+                    d="M130.198 0H62.993l26.323 39.989h40.882a4.733 4.733 0 0 0 4.729-4.724V4.726A4.734 4.734 0 0 0 130.198 0z" />
+
+                <g fill="#FFF">
+
+                    <path
+                        d="M53.665 31.504h-2.271l-1.244-3.909h-4.324l-1.185 3.909H42.43l4.285-13.308h2.646l4.304 13.308zm-3.89-5.549L48.65 22.48c-.119-.355-.343-1.191-.671-2.507h-.04c-.132.566-.343 1.402-.632 2.507l-1.106 3.475h3.574zM64.663 26.588c0 1.632-.443 2.922-1.33 3.869-.794.843-1.781 1.264-2.958 1.264-1.271 0-2.185-.453-2.74-1.361v5.035h-2.132V25.062c0-1.025-.027-2.076-.079-3.154h1.875l.119 1.521h.04c.711-1.146 1.79-1.719 3.238-1.719 1.132 0 2.077.447 2.833 1.342.755.897 1.134 2.075 1.134 3.536zm-2.172.078c0-.934-.21-1.704-.632-2.311-.461-.631-1.08-.947-1.856-.947-.526 0-1.004.176-1.431.523-.428.35-.708.807-.839 1.373a2.784 2.784 0 0 0-.099.649v1.601c0 .697.214 1.286.642 1.768.428.48.984.721 1.668.721.803 0 1.428-.311 1.875-.928.448-.619.672-1.435.672-2.449zM75.7 26.588c0 1.632-.443 2.922-1.33 3.869-.795.843-1.781 1.264-2.959 1.264-1.271 0-2.185-.453-2.74-1.361v5.035h-2.132V25.062c0-1.025-.027-2.076-.079-3.154h1.875l.119 1.521h.04c.71-1.146 1.789-1.719 3.238-1.719 1.131 0 2.076.447 2.834 1.342.754.897 1.134 2.075 1.134 3.536zm-2.173.078c0-.934-.211-1.704-.633-2.311-.461-.631-1.078-.947-1.854-.947-.526 0-1.004.176-1.433.523-.428.35-.707.807-.838 1.373-.065.264-.1.479-.1.649v1.601c0 .697.215 1.286.641 1.768.428.479.984.721 1.67.721.804 0 1.429-.311 1.875-.928.448-.619.672-1.435.672-2.449zM88.04 27.771c0 1.133-.396 2.054-1.183 2.765-.866.776-2.075 1.165-3.625 1.165-1.432 0-2.58-.276-3.446-.829l.493-1.777c.935.554 1.962.83 3.08.83.804 0 1.429-.182 1.875-.543.447-.362.673-.846.673-1.45 0-.541-.187-.994-.554-1.363-.369-.368-.979-.711-1.836-1.026-2.33-.869-3.496-2.14-3.496-3.812 0-1.092.412-1.986 1.234-2.685.822-.698 1.912-1.047 3.268-1.047 1.211 0 2.22.211 3.021.632l-.535 1.738c-.754-.408-1.605-.612-2.557-.612-.752 0-1.342.185-1.764.553-.355.329-.535.73-.535 1.206 0 .525.205.961.613 1.303.354.315 1 .658 1.934 1.026 1.146.462 1.988 1 2.527 1.618.543.618.813 1.389.813 2.308zM95.107 23.508h-2.35v4.659c0 1.185.414 1.776 1.244 1.776.381 0 .697-.032.947-.099l.059 1.619c-.42.157-.973.236-1.658.236-.842 0-1.5-.257-1.975-.771-.473-.514-.711-1.375-.711-2.587v-4.837h-1.4v-1.6h1.4v-1.757l2.094-.632v2.389h2.35v1.604zM105.689 26.627c0 1.475-.422 2.686-1.264 3.633-.881.975-2.053 1.461-3.514 1.461-1.41 0-2.531-.467-3.367-1.4-.836-.935-1.254-2.113-1.254-3.534 0-1.487.432-2.705 1.293-3.652.863-.948 2.025-1.422 3.486-1.422 1.408 0 2.539.468 3.395 1.402.818.906 1.225 2.076 1.225 3.512zm-2.21.049c0-.879-.19-1.633-.571-2.264-.447-.762-1.087-1.143-1.916-1.143-.854 0-1.509.381-1.955 1.143-.382.631-.572 1.398-.572 2.304 0 .88.19 1.636.572 2.265.461.762 1.104 1.143 1.937 1.143.815 0 1.454-.389 1.916-1.162.392-.646.589-1.405.589-2.286zM112.622 23.783a3.71 3.71 0 0 0-.672-.059c-.75 0-1.33.282-1.738.85-.354.5-.532 1.132-.532 1.895v5.035h-2.132V24.93a67.43 67.43 0 0 0-.062-3.021h1.857l.078 1.836h.059c.226-.631.58-1.14 1.066-1.521a2.578 2.578 0 0 1 1.541-.514c.197 0 .375.014.533.039l.002 2.034zM122.157 26.252a5 5 0 0 1-.078.967h-6.396c.024.948.334 1.674.928 2.174.539.446 1.236.67 2.092.67.947 0 1.811-.15 2.588-.453l.334 1.479c-.908.396-1.98.593-3.217.593-1.488 0-2.656-.438-3.506-1.312-.848-.875-1.273-2.051-1.273-3.524 0-1.446.395-2.651 1.186-3.612.828-1.026 1.947-1.539 3.355-1.539 1.383 0 2.43.513 3.141 1.539.563.813.846 1.821.846 3.018zm-2.033-.553c.015-.633-.125-1.178-.414-1.639-.369-.594-.937-.89-1.698-.89-.697 0-1.265.289-1.697.869-.355.461-.566 1.015-.631 1.658l4.44.002z" />
+
+                </g>
+
+                <g fill="#FFF">
+
+                    <path
+                        d="M45.211 13.491c-.593 0-1.106-.029-1.533-.078V6.979a11.606 11.606 0 0 1 1.805-.136c2.445 0 3.571 1.203 3.571 3.164 0 2.262-1.33 3.484-3.843 3.484zm.358-5.823c-.33 0-.611.02-.844.068v4.891c.126.02.368.029.708.029 1.602 0 2.514-.912 2.514-2.62 0-1.523-.825-2.368-2.378-2.368zM52.563 13.54c-1.378 0-2.271-1.029-2.271-2.426 0-1.456.912-2.494 2.349-2.494 1.358 0 2.271.98 2.271 2.417 0 1.474-.941 2.503-2.349 2.503zm.04-4.154c-.757 0-1.242.708-1.242 1.698 0 .971.495 1.679 1.232 1.679s1.232-.757 1.232-1.699c0-.96-.485-1.678-1.222-1.678zM62.77 8.717l-1.475 4.716h-.961l-.611-2.048a15.53 15.53 0 0 1-.379-1.523h-.02c-.077.514-.223 1.029-.378 1.523l-.65 2.048h-.971l-1.388-4.716h1.077l.534 2.242c.126.534.232 1.038.32 1.514h.02c.077-.397.203-.893.388-1.504l.67-2.251h.854l.641 2.203c.155.534.281 1.058.379 1.553h.028c.068-.485.175-1 .32-1.553l.573-2.203 1.029-.001zM68.2 13.433h-1.048v-2.708c0-.834-.32-1.252-.951-1.252-.621 0-1.048.534-1.048 1.155v2.805h-1.048v-3.368c0-.417-.01-.864-.039-1.349h.922l.049.728h.029c.282-.504.854-.824 1.495-.824.99 0 1.64.757 1.64 1.989l-.001 2.824zM71.09 13.433h-1.049v-6.88h1.049v6.88zM74.911 13.54c-1.377 0-2.271-1.029-2.271-2.426 0-1.456.912-2.494 2.348-2.494 1.359 0 2.271.98 2.271 2.417.001 1.474-.941 2.503-2.348 2.503zm.039-4.154c-.757 0-1.242.708-1.242 1.698 0 .971.496 1.679 1.231 1.679.738 0 1.232-.757 1.232-1.699.001-.96-.483-1.678-1.221-1.678zM81.391 13.433l-.076-.543h-.028c-.32.437-.787.65-1.379.65-.845 0-1.445-.592-1.445-1.388 0-1.164 1.009-1.766 2.756-1.766v-.087c0-.621-.329-.932-.979-.932-.465 0-.873.117-1.232.35l-.213-.689c.436-.272.98-.408 1.619-.408 1.232 0 1.854.65 1.854 1.951v1.737c0 .476.021.845.068 1.126l-.945-.001zm-.144-2.349c-1.164 0-1.748.282-1.748.951 0 .495.301.737.719.737.533 0 1.029-.407 1.029-.96v-.728zM87.357 13.433l-.049-.757h-.029c-.301.572-.807.864-1.514.864-1.137 0-1.979-1-1.979-2.407 0-1.475.873-2.514 2.065-2.514.631 0 1.078.213 1.33.641h.021V6.553h1.049v5.609c0 .456.011.883.039 1.271h-.933zm-.155-2.775c0-.66-.437-1.223-1.104-1.223-.777 0-1.252.689-1.252 1.659 0 .951.493 1.602 1.231 1.602.659 0 1.125-.573 1.125-1.252v-.786zM94.902 13.54c-1.377 0-2.27-1.029-2.27-2.426 0-1.456.912-2.494 2.348-2.494 1.359 0 2.271.98 2.271 2.417.001 1.474-.94 2.503-2.349 2.503zm.039-4.154c-.756 0-1.241.708-1.241 1.698 0 .971.495 1.679 1.231 1.679.738 0 1.232-.757 1.232-1.699.002-.96-.483-1.678-1.222-1.678zM102.887 13.433h-1.049v-2.708c0-.834-.32-1.252-.951-1.252-.621 0-1.047.534-1.047 1.155v2.805h-1.049v-3.368c0-.417-.01-.864-.039-1.349h.922l.049.728h.029c.281-.504.854-.825 1.494-.825.99 0 1.641.757 1.641 1.989v2.825zM109.938 9.503h-1.153v2.29c0 .583.202.874.61.874.185 0 .34-.02.465-.049l.029.796c-.203.078-.475.117-.813.117-.826 0-1.32-.456-1.32-1.65V9.503h-.688v-.786h.688v-.864l1.029-.311v1.174h1.153v.787zM115.486 13.433h-1.047v-2.688c0-.844-.319-1.271-.951-1.271-.543 0-1.049.369-1.049 1.116v2.843h-1.047v-6.88h1.047v2.833h.021c.33-.514.808-.767 1.418-.767.998 0 1.608.776 1.608 2.009v2.805zM121.17 11.327h-3.145c.02.893.611 1.397 1.486 1.397.465 0 .893-.078 1.271-.223l.163.728c-.446.194-.971.291-1.582.291-1.475 0-2.348-.932-2.348-2.377 0-1.446.894-2.533 2.23-2.533 1.205 0 1.961.893 1.961 2.242a2.02 2.02 0 0 1-.036.475zm-.961-.747c0-.728-.367-1.242-1.037-1.242-.602 0-1.078.524-1.146 1.242h2.183z" />
+
+                </g>
+
+            </g>
+
+        </svg>
+
+    </p>
+    <p>
+        Copyright &#169 2023 spring spruce - All Rights Reserved.
+
+    </p>
+</body>
+
+</html>

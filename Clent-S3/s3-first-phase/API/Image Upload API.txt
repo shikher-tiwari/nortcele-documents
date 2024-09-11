@@ -1,3 +1,0 @@
-expected parameters : title,filepath,offerType,startdate,endDate,remarks,createdby
-offer type values : 'OFFERS', 'UPCOMING_POJECT', 'INCOMING_POJECT'
-/api/offeruploads/addoffers  get and post
